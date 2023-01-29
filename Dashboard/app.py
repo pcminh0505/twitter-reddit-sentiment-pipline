@@ -96,7 +96,7 @@ tweets_num_fig.add_trace(go.Indicator(
     domain={'row':0,'column':0}
 ))
 
-tweets_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+tweets_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -130,7 +130,7 @@ retweets_avg_fig.add_trace(go.Indicator(
    domain={'row':0,'column':0}
 ))
 
-retweets_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+retweets_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -162,7 +162,7 @@ likes_avg_fig.add_trace(go.Indicator(
    domain={'row':0,'column':0}
 ))
 
-likes_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+likes_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -193,7 +193,7 @@ replies_avg_fig.add_trace(go.Indicator(
    domain={'row':0,'column':0}
 ))
 
-replies_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+replies_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -226,7 +226,7 @@ countries_num_fig.add_trace(go.Indicator(
    domain={'row':0,'column':0}
 ))
 
-countries_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+countries_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -259,7 +259,7 @@ reddit_num_fig.add_trace(go.Indicator(
     domain={'row':0,'column':0}
 ))
 
-reddit_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+reddit_num_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -293,7 +293,7 @@ upvotes_avg_fig.add_trace(go.Indicator(
    domain={'row':0,'column':0}
 ))
 
-upvotes_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=50,margin=dict(l=0, r=0, t=0, b=0),
+upvotes_avg_fig.update_layout(paper_bgcolor = "#f7f7f7",plot_bgcolor='white',height=40,margin=dict(l=0, r=0, t=0, b=0),
 
                   )
 
@@ -441,7 +441,7 @@ main_layout=html.Div([
                                                                   spinner_style=dict(marginTop=''))
 
                                                       ])
-                                        , style=dict(backgroundColor='#f7f7f7'), id='card1',
+                                        , style=dict(backgroundColor='#f7f7f7', width='200px'), id='card1',
                                         className='info-card'),
 
 
@@ -451,7 +451,7 @@ main_layout=html.Div([
                                                                   spinner_style=dict(marginTop=''))
 
                                                       ])
-                                        , style=dict(backgroundColor='#f7f7f7',marginLeft='1vw'), id='card2',
+                                        , style=dict(backgroundColor='#f7f7f7',width='200px', marginLeft='1vw'), id='card2',
                                         className='info-card'),
 
                         dbc.Card(dbc.CardBody([likes_avg_text,
@@ -461,7 +461,7 @@ main_layout=html.Div([
                                                                     spinner_style=dict(marginTop=''))
 
                                                         ])
-                                          , style=dict(backgroundColor='#f7f7f7',marginLeft='1vw'), id='card4',
+                                          , style=dict(backgroundColor='#f7f7f7',width='200px', marginLeft='1vw'), id='card4',
                                           className='info-card'),
 
                         dbc.Card(dbc.CardBody([replies_avg_text,
@@ -471,7 +471,7 @@ main_layout=html.Div([
                                                                     spinner_style=dict(marginTop=''))
 
                                                         ])
-                                          , style=dict(backgroundColor='#f7f7f7',marginLeft='1vw'), id='card5',
+                                          , style=dict(backgroundColor='#f7f7f7',width='200px', marginLeft='1vw'), id='card5',
                                           className='info-card'),
 
                         dbc.Card(dbc.CardBody([countries_num_text,
@@ -481,7 +481,7 @@ main_layout=html.Div([
                                                                     spinner_style=dict(marginTop=''))
 
                                                         ])
-                                          , style=dict(backgroundColor='#f7f7f7',marginLeft='1vw'), id='card6',
+                                          , style=dict(backgroundColor='#f7f7f7',width='200px', marginLeft='1vw'), id='card6',
                                           className='info-card'),
 
                         dbc.Card(dbc.CardBody([reddit_num_text,
@@ -489,7 +489,7 @@ main_layout=html.Div([
                                                                   type="border", fullscreen=False,
                                                                   spinner_style=dict(marginTop=''))
                                                       ])
-                                        , style=dict(backgroundColor='#f7f7f7', marginLeft='1vw'), id='card7',
+                                        , style=dict(backgroundColor='#f7f7f7', width='200px', marginLeft='1vw'), id='card7',
                                         className='info-card'),
 
                         dbc.Card(dbc.CardBody([upvotes_avg_text,
@@ -497,7 +497,7 @@ main_layout=html.Div([
                                                                   type="border", fullscreen=False,
                                                                   spinner_style=dict(marginTop=''))
                                                       ])
-                                        , style=dict(backgroundColor='#f7f7f7',marginLeft='1vw'), id='card8',
+                                        , style=dict(backgroundColor='#f7f7f7',width='200px', marginLeft='1vw'), id='card8',
                                         className='info-card'),
 
                         ],style=dict(display= 'flex', alignItems= 'center',
