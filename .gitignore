@@ -151,3 +151,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .DS_Store
+Bucket/processed-reddit-latest.csv
+Bucket/processed-twitter-latest.csv
+Bucket/reddit-offline-latest.csv
+Bucket/twitter-offline-latest.csv
