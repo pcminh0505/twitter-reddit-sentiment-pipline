@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  dashboard:
+    container_name: dashboard
+    build:
+      context: .
+    image: dashboard
+    ports:
+      - "8050:8050"
+    restart: unless-stopped
